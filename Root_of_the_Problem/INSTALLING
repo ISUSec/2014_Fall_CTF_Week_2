@@ -1,0 +1,9 @@
+Make sure both .txt files are owned by root:
+# chown root:root *.txt
+
+The text files should be marked 400, and get-flag.sh should be 777.
+
+Add the following line to the end of /etc/sudoers:
+ALL ALL=NOPASSWD: /path/to/get-flag.sh
+
+Delete this file.
